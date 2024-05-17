@@ -1,6 +1,7 @@
 const money =[
     
     {
+        uniqId:"bil",
         id:"1",
         title:"Billionars",
         lgImage:"https://ceoworld.biz/wp-content/uploads/2022/01/Bernard-Arnault-2.jpg",

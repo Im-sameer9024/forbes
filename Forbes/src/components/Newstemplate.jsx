@@ -7,7 +7,7 @@ export default function Newstemplate({ Moneydata }) {
   return (
     <>
       {/* md screen size  */}
-      <div className="md:block sm:hidden hidden ">
+      <div  className="md:block sm:hidden hidden ">
         <div className=" bg-black w-11/12 mx-auto h-0.5 my-6"></div>
         <div className=" relative left-14  inline-block">
           <h1 className=" mx-auto w-11/12 cursor-pointer flex items-center hover:gap-3 gap-1 font-smallHeading text-[30px] my-4  ">
@@ -130,7 +130,7 @@ export default function Newstemplate({ Moneydata }) {
       </div>
 
       {/* sm screen size  */}
-      <div className="sm:block block md:hidden">
+      <div  className="sm:block block md:hidden">
         <div className=" bg-black w-11/12 mx-auto h-0.5 my-6"></div>
         <div className=" relative left-14  inline-block">
           <h1 className=" mx-auto w-11/12 cursor-pointer flex items-center hover:gap-3 gap-1 font-smallHeading text-[30px] my-4  ">
