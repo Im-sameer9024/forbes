@@ -99,7 +99,7 @@ export default function About({setShowForm,showForm,closeForm}) {
                      Billionaire Jim Simons’ Last Interview: The Hedge
                     Fund
                     <span
-                      className=" relative top-5 text-[20px] text-orange-300"
+                      className=" cursor-pointer relative top-5 text-[20px] text-orange-300"
                       onClick={() => toggleHandler()}
                     >
                       {isLiked ? <BsStarFill /> : <BsStar />}
@@ -117,7 +117,7 @@ export default function About({setShowForm,showForm,closeForm}) {
                     Here s Taylor Swift s Updated Eras Tour Setlist In Europe So
                     Far
                     <span
-                      className=" relative top-5 text-[20px] text-orange-300"
+                      className=" cursor-pointer relative top-5 text-[20px] text-orange-300"
                       onClick={() => toggleHandlersecond()}
                     >
                       {isStar ? <BsStarFill /> : <BsStar />}

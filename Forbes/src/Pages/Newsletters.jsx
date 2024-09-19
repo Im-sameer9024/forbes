@@ -6,7 +6,7 @@ import { FaPlus } from "react-icons/fa6";
 export default function Newsletters() {
   return (
     <>
-      <div className='w-[100vw] h-[100vh] overflow-x-hidden'>
+      <div className='w-[100vw] cursor-pointer h-[100vh] overflow-x-hidden'>
         <nav className='w-full bg-black text-center  '>
            <span className="text-[15px] text-white sm:text-[35px] font-bold font-heading">Forbes</span>
            <span className='text-[12px] text-white font-smallHeading float-end relative top-5 left-[-4rem]  '>Create Account | Sign In</span>

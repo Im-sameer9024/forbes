@@ -7,14 +7,17 @@ export default function Quote() {
 
   const[quote,setQuote]=useState([])
 
-   const Url = "https://api.quotable.io/random"
+   const Url = 'https://dummyjson.com/quotes'
+
+   const random = Math.floor(Math.random()*30)
+   
+   
   const fetchApi = async(Url) =>{
     const res = await fetch(Url);
     const data = await res.json()
-    setQuote(data)
-    
+    setQuote(data.quotes[random])
   }
-
+ 
   useEffect(()=>{
     fetchApi(Url);
   },[])
@@ -26,7 +29,7 @@ export default function Quote() {
            QUOTE OF THE DAY
            </div>
            <div className=' flex flex-col gap-2 justify-center items-center'>
-             <p className=' font-content px-3' >{quote.content}</p>
+             <p className=' font-content px-3' >{quote.quote}</p>
              <span className='flex  right-0 bottom-3 font-heading '> <span className=' pb-3 font-content '><i>written by</i> &nbsp;</span> <FaQuoteLeft className=' w-2'/>The {quote.author}<FaQuoteRight className=' w-2'/></span>
            </div>
        </div>

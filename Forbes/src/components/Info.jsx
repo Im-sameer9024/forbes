@@ -15,12 +15,12 @@ export default function Info() {
   function submitHandler(event){
    event.preventDefault()
    console.log(data)
-   setData({email:"",isVisible:false})
+   
   }
 
   function changeHandler(event){
     const{name,type,value,checked} = event.target;
-    setData((prev)=>{ return {...prev,[name]:type === "checked" ? checked : value  }})
+    setData((prev)=> ({...prev,[name]:type === "checkbox" ? checked : value  }) )
 
   }
 
@@ -54,8 +54,14 @@ export default function Info() {
 
         <form onSubmit={submitHandler} className=" flex flex-col justify-center gap-3 sm:gap-8 md:gap:10 text-[10px] sm:text-[14px] md:text-[20px] ">
           <div className=" flex gap-3">
-            <input type="checkbox" name="isVisible" id="isVisible" onChange={changeHandler} checked={data.isVisible} value="Get the latest news on special offers, product updates and content suggestions from Forbes and its affiliates."  />
-            <label htmlFor="isVisible">
+            <input 
+            type="checkbox"
+             name="isVisible"
+              id="isVisible"
+               onChange={changeHandler} 
+               checked={data.isVisible}
+                 />
+            <label htmlFor="hello">
               Get the latest news on special offers, product updates and content
               suggestions from Forbes and its affiliates.
             </label>

@@ -89,9 +89,6 @@ export default function Navbar({showForm,setShowForm,closeForm}) {
   }
 
   
-  
-    
-
   return (
     <>
     
